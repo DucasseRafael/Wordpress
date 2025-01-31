@@ -1,0 +1,38 @@
+<odoo>
+    <record id="view_form_ville" model="ir.ui.view">
+        <field name="name">finalfantasyxiv.ville.form</field>
+        <field name="model">finalfantasyxiv.ville</field>
+        <field name="arch" type="xml">
+            <form string="Ville">
+                <sheet>
+                    <group>
+                        <field name="nomVille"/>
+                        <field name="nbreMarchands"/>
+                        <field name="DateCreationVille"/>
+                        <field name="zoneVille"/>
+                    </group>
+                    <group>
+                        <field name="image" widget="image" class="oe_avatar"/>
+                    </group>
+                </sheet>
+                <footer>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_list_vehicle" model="ir.ui.view">
+    <field name="name">Ville list</field>
+    <field name="model">finalfantasyxiv.ville</field>
+    <field name="arch" type="xml">
+        <list>
+            <field name="nomVille"/>
+            <field name="nbreMarchands"/>
+            <field name="DateCreationVille"/>
+            <field name="zoneVille"/>
+            <field name="image" widget="image" options='{"size": [150, 140]}'/>
+            <field name="joueur_ids"/>
+        </list>
+    </field>
+</record>
+</odoo>

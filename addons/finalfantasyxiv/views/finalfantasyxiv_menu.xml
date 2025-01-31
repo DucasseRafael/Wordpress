@@ -1,0 +1,21 @@
+<odoo>
+    <!-- Menu de l'application Final Fantasy XIV -->
+    <menuitem id="menu_finalfantasyxiv" name="Final Fantasy XIV" />
+    <!-- Action pour ouvrir la liste des villes -->
+    <record id="action_finalfantasyxiv_ville" model="ir.actions.act_window">
+        <field name="name">Ville</field>
+        <field name="res_model">finalfantasyxiv.ville</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Action pour ouvrir la liste des garages -->
+    <record id="action_finalfantasyxiv_joueur" model="ir.actions.act_window">
+        <field name="name">Joueurs</field>
+        <field name="res_model">finalfantasyxiv.joueur</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Lien de menu qui utilise l'action qui affiche la liste des villes -->
+    <menuitem id="menu_finalfantasyxiv_ville" name="Villes" parent="menu_finalfantasyxiv" action="action_finalfantasyxiv_ville" sequence="0"  />
+    <menuitem id="menu_finalfantasyxiv_joueur" name="Joueurs" parent="menu_finalfantasyxiv" action="action_finalfantasyxiv_joueur" sequence="10" />
+</odoo>

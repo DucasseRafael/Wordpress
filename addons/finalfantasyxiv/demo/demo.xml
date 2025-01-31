@@ -1,0 +1,88 @@
+<odoo>
+    <data noupdate="1">
+        <record id="ville_1" model="finalfantasyxiv.ville">
+            <field name="nomVille">Limsa Lominsa</field>
+            <field name="nbreMarchands">10</field>
+            <field name="DateCreationVille">2020-01-01</field>
+            <field name="image" type="base64" file="finalfantasyxiv/static/photos/limsa.jpg"/> 
+            <field name="zoneVille">mer</field>
+        </record>
+
+        <record id="ville_2" model="finalfantasyxiv.ville">
+            <field name="nomVille">Ulda'h</field>
+            <field name="nbreMarchands">5</field>
+            <field name="DateCreationVille">2020-02-15</field>
+            <field name="image" type="base64" file="finalfantasyxiv/static/photos/uldah.jpg"/> 
+            <field name="zoneVille">foret</field>
+        </record>
+
+        <record id="ville_3" model="finalfantasyxiv.ville">
+            <field name="nomVille">Gridania</field>
+            <field name="nbreMarchands">7</field>
+            <field name="DateCreationVille">2020-03-10</field>
+            <field name="image" type="base64" file="finalfantasyxiv/static/photos/gridania.jpg"/> 
+            <field name="zoneVille">desert</field>
+        </record>
+
+        <record id="ville_4" model="finalfantasyxiv.ville">
+            <field name="nomVille">Costa del Sol</field>
+            <field name="nbreMarchands">15</field>
+            <field name="DateCreationVille">2020-04-20</field>
+            <field name="image" type="base64" file="finalfantasyxiv/static/photos/costa.jpg"/> 
+            <field name="zoneVille">mer</field>
+        </record>
+
+        <record id="ville_5" model="finalfantasyxiv.ville">
+            <field name="nomVille">Midgar</field>
+            <field name="nbreMarchands">3</field>
+            <field name="DateCreationVille">2020-05-30</field>
+            <field name="image" type="base64" file="finalfantasyxiv/static/photos/midgar.jpg"/> 
+            <field name="zoneVille">neige</field>
+        </record>
+
+        <record id="joueur_1" model="finalfantasyxiv.joueur">
+            <field name="nom">Cloud Strife</field>
+            <field name="niveau">60</field>
+            <field name="dateCreationJoueur">2021-03-01</field>
+            <field name="image" type="base64" file="finalfantasyxiv/static/photos/cloud.jpg"/> 
+            <field name="classeJoueur">paladin</field>
+            <field name="ville_id" ref="ville_1"/>
+        </record>
+
+        <record id="joueur_2" model="finalfantasyxiv.joueur">
+            <field name="nom">Sephiroth</field>
+            <field name="niveau">70</field>
+            <field name="dateCreationJoueur">2021-04-15</field>
+            <field name="image" type="base64" file="finalfantasyxiv/static/photos/sephiroth.jpg"/> 
+            <field name="classeJoueur">barde</field>
+            <field name="ville_id" ref="ville_2"/>
+        </record>
+
+        <record id="joueur_3" model="finalfantasyxiv.joueur">
+            <field name="nom">Aerith Gainsborough</field>
+            <field name="niveau">50</field>
+            <field name="dateCreationJoueur">2021-05-20</field>
+            <field name="image" type="base64" file="finalfantasyxiv/static/photos/aerith.jpg"/> 
+            <field name="classeJoueur">cuisinier</field>
+            <field name="ville_id" ref="ville_3"/>
+        </record>
+
+        <record id="joueur_4" model="finalfantasyxiv.joueur">
+            <field name="nom">Tifa Lockhart</field>
+            <field name="niveau">55</field>
+            <field name="dateCreationJoueur">2021-06-10</field>
+            <field name="image" type="base64" file="finalfantasyxiv/static/photos/tifa.jpg"/> 
+            <field name="classeJoueur">forestier</field>
+            <field name="ville_id" ref="ville_4"/>
+        </record>
+
+        <record id="joueur_5" model="finalfantasyxiv.joueur">
+            <field name="nom">Vincent Valentine</field>
+            <field name="niveau">65</field>
+            <field name="dateCreationJoueur">2021-07-25</field>
+            <field name="image" type="base64" file="finalfantasyxiv/static/photos/vincent.jpg"/> 
+            <field name="classeJoueur">paladin</field>
+            <field name="ville_id" ref="ville_5"/>
+        </record>
+    </data>
+</odoo>
